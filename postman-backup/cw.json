@@ -9,7 +9,7 @@
       "name": "Presentations",
       "item": [
         {
-          "name": "Get shared presentation links 2",
+          "name": "Get shared presentation links",
           "id": "2fc29753-d997-4050-86f1-7a746c274fe8",
           "protocolProfileBehavior": {
             "disableBodyPruning": true

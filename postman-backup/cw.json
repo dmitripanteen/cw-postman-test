@@ -126,7 +126,7 @@
                 }
               ]
             },
-            "description": "The route is `/data/presentation/:presentationId/link/:presentationLinkId`\n\nThe user should have `sme_basic_role` role to access the endpoint (role name may change in future).\n\nOnly status property can be patched. Accepted values are `\"new\"` and `\"opened\"`"
+            "description": "The route is `/data/presentation/:presentationId/link/:presentationLinkId`\n\nThe user should have `sme_basic_role` role to access the endpoint (role name may change in future).\n\nOnly `status` property can be patched. Accepted values are `\"new\"` and `\"opened\"`"
           },
           "response": [
             {

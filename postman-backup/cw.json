@@ -126,7 +126,7 @@
                 }
               ]
             },
-            "description": "The route is `/data/presentation/:presentationId/link/:presentationLinkId`<br>\nThe user should have `sme_basic_role` role to access the endpoint (role name may change in future).<br>\nOnly status property can be patched. Accepted values are `\"new\"` and `\"opened\"`"
+            "description": "The route is `/data/presentation/:presentationId/link/:presentationLinkId`\n\nThe user should have `sme_basic_role` role to access the endpoint (role name may change in future).\n\nOnly status property can be patched. Accepted values are `\"new\"` and `\"opened\"`"
           },
           "response": [
             {
@@ -134,39 +134,24 @@
               "name": "Patch shared presentation link",
               "originalRequest": {
                 "method": "PATCH",
-                "header": [],
-                "url": {
-                  "raw": "https://test.crediwire.com/data/presentation/:presentationId/link/:presentationLinkId",
-                  "protocol": "https",
-                  "host": [
-                    "test",
-                    "crediwire",
-                    "com"
-                  ],
-                  "path": [
-                    "data",
-                    "presentation",
-                    ":presentationId",
-                    "link",
-                    ":presentationLinkId"
-                  ],
-                  "variable": [
-                    {
-                      "key": "presentationId",
-                      "value": null
-                    },
-                    {
-                      "key": "presentationLinkId",
-                      "value": null
-                    }
-                  ]
-                }
+                "header": [
+                  {
+                    "key": "x-xsrf-token",
+                    "value": "ba5d94a710a1c90b4e57c0ffdb628814e5e98ec52df9464217a9fc8e03a31e3886e0fad4c336d3cb",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"status\":\"opened\"}"
+                },
+                "url": "https://test.crediwire.com/data/presentation/93a18868-dc93-47d3-b13c-91400b7d8008/link/1c54ed89-4533-4cbb-9af9-d7c9539172a6"
               },
-              "_postman_previewlanguage": null,
+              "_postman_previewlanguage": "json",
               "header": null,
               "cookie": [],
               "responseTime": null,
-              "body": null
+              "body": "{\n    \"id\": \"1c54ed89-4533-4cbb-9af9-d7c9539172a6\",\n    \"pin_code\": \"pBovmzAyq89\",\n    \"email\": \"basic_sme@crediwire.com\",\n    \"name\": \"Test 4\",\n    \"text\": \"\",\n    \"url_part\": \"21011027-2eb7-4711-97d7-cf29f5401962\",\n    \"token\": \"21011027-2eb7-4711-97d7-cf29f5401962\",\n    \"send\": true,\n    \"sent\": true,\n    \"sent_at\": \"2021-09-17T06:16:40Z\",\n    \"include_company_user_token\": false,\n    \"status\": \"opened\",\n    \"_links\": {\n        \"self\": {\n            \"href\": \"https://test.crediwire.com/data/presentation/93a18868-dc93-47d3-b13c-91400b7d8008/link/1c54ed89-4533-4cbb-9af9-d7c9539172a6\"\n        }\n    }\n}"
             }
           ]
         }

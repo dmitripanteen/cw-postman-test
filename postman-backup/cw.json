@@ -115,7 +115,47 @@
               ]
             }
           },
-          "response": []
+          "response": [
+            {
+              "id": "71a291a4-b757-4dcc-9e10-5d602b098820",
+              "name": "Patch shared presentation link",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [],
+                "url": {
+                  "raw": "https://test.crediwire.com/data/presentation/:presentationId/link/:presentationLinkId",
+                  "protocol": "https",
+                  "host": [
+                    "test",
+                    "crediwire",
+                    "com"
+                  ],
+                  "path": [
+                    "data",
+                    "presentation",
+                    ":presentationId",
+                    "link",
+                    ":presentationLinkId"
+                  ],
+                  "variable": [
+                    {
+                      "key": "presentationId",
+                      "value": null
+                    },
+                    {
+                      "key": "presentationLinkId",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "responseTime": null,
+              "body": null
+            }
+          ]
         }
       ],
       "id": "d82eca07-7329-468a-a5e0-a15c20c2b7a0"

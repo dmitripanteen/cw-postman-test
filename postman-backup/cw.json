@@ -87,7 +87,13 @@
           },
           "request": {
             "method": "PATCH",
-            "header": [],
+            "header": [
+              {
+                "key": "x-xsrf-token",
+                "value": "ba5d94a710a1c90b4e57c0ffdb628814e5e98ec52df9464217a9fc8e03a31e3886e0fad4c336d3cb",
+                "type": "text"
+              }
+            ],
             "url": {
               "raw": "https://test.crediwire.com/data/presentation/:presentationId/link/:presentationLinkId",
               "protocol": "https",
